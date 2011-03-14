@@ -69,8 +69,8 @@ MainAssistant.prototype.handleCommand = function(e) {
 	case "evaluate":
 	    Mojo.Log.info("Calling evaluate");
 	    if( this.evalLisp) {
-		Mojo.Log.info("Evaluating " + this.controller.get("textin").innerHTML);
-		this.evalLisp( this.controller.get("textin").innerHTML , function(r){ Mojo.Log.info("Calling output with " + r); this.placeOutputHandler(r);}.bind(this) );
+		Mojo.Log.info("Evaluating " + this.controller.get("textin").innerHTML.stripTags().gsub(/&\w+;/ , " "));
+			      this.evalLisp( this.controller.get("textin").innerHTML.stripTags().gsub(/&\w+;/, " ") , function(r){ Mojo.Log.info("Calling output with " + r); this.placeOutputHandler(r);}.bind(this) );
 	    } else {
 		Mojo.Log.info("Not ready to evaluate yet");
 	    }
