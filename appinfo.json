@@ -1,7 +1,7 @@
 {
-	"id": "com.yourdomain.lisp-addict",
-	"version": "1.0.0",
-	"vendor": "My Company",
+	"id": "org.norstrulde.lisp-addict",
+	"version": "0.0.1",
+	"vendor": "lispgames",
 	"type": "web",
 	"main": "index.html",
 	"title": "Lisp Addict",
