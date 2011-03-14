@@ -16,13 +16,25 @@ MainAssistant.prototype.setupHandlers = function () {
     // Handlers
     // --
     this.placeOutputHandler = function(output) {
-	Mojo.Log.info("Placing output");
-	this.controller.get( "textout" ).innerHTML = output.escapeHTML();
+	var outputString = output.escapeHTML();
+	Mojo.Log.info("Placing output " + outputString);
+	this.controller.get( "textout" ).innerHTML = outputString;
     }.bind(this);
     
     enslave = function( lispEvaluator ){
 	Mojo.Log.info("Calling enslave function");
 	this.evalLisp = lispEvaluator;
+    }.bind(this);
+
+    this.evaluateHandler = function() {
+	if( this.evalLisp) {
+	    var code = this.controller.get("textin").innerHTML.unescapeHTML().gsub("&nbsp;"," ");
+	    Mojo.Log.info("Evaluating " + code);
+	    this.evalLisp( code , this.placeOutputHandler);
+	} else {
+	    Mojo.Log.info("Not ready to evaluate yet");
+	}
+
     }.bind(this);
 
 };
@@ -67,13 +79,7 @@ MainAssistant.prototype.handleCommand = function(e) {
     {
 	switch(e.command) {
 	case "evaluate":
-	    Mojo.Log.info("Calling evaluate");
-	    if( this.evalLisp) {
-		Mojo.Log.info("Evaluating " + this.controller.get("textin").innerHTML.unescapeHTML());
-		this.evalLisp( this.controller.get("textin").innerHTML.unescapeHTML() , function(r){ Mojo.Log.info("Calling output with " + r); this.placeOutputHandler(r);}.bind(this) );
-	    } else {
-		Mojo.Log.info("Not ready to evaluate yet");
-	    }
+	    this.evaluateHandler();
 	    break;
 	case "reset":
 	    Mojo.Log.info("Calling reset");

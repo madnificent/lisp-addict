@@ -1,6 +1,7 @@
 [
   {"source": "app/assistants/stage-assistant.js"},
-  {"source": "app/Wds17.js"},
+  {"source": "app/vm.js"},
+  {"source": "app/bytecode.js"},
   {"source": "app/assistants/main-assistant.js",
    "scenes": "main"}
 ]
