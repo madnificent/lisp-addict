@@ -1,11 +1,3 @@
-// enslave example: this function is provided by the stage
-// var enslave = function(lisp) {
-//     Mojo.Log.error("Enslave was called before the system published it");
-// };
-
-// Make sure Wds17-image.js before calling load();
-// load();
-
 /// global state
 
 var globals = {};
@@ -1690,8 +1682,4 @@ var load = function() {
 	loadfprims();
 	loadmprims();
 	execute(compiledcode);
-	//xhrget("boot.fasl", function(code, text) {
-	//	execute(eval(text));
-	//});
 };
-
