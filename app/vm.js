@@ -1,3 +1,9 @@
+/// credits
+
+// The virtual machine was originally based on ideas and code from the
+// books Paradigms of Artificial Intelligence Programming by Peter
+// Norvig and Programming Erlang by Joe Armstrong.
+
 /// global state
 
 var globals = {};
