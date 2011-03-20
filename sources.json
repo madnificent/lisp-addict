@@ -1,7 +1,7 @@
 [
+  {"source": "app/bytecode.js"}, // bytecode as soon before the vm as possible
   {"source": "app/assistants/stage-assistant.js"},
   {"source": "app/vm.js"},
-  {"source": "app/bytecode.js"},
   {"source": "app/assistants/main-assistant.js",
    "scenes": "main"}
 ]
