@@ -15,14 +15,55 @@
 	font-size: 13px;
 	resize: none;
 	width: 90%;
+	min-height: 5em;
 	left: 0px;
 	right: 0px;
+	padding: 0;
+	margin: 0;
+	border: 0px;
+	background: none;
 }
-#textin {
-	/* width: 280px; */
+
+#codein {
+    /* width: 280px; */
     min-height: 80px;
+    padding: 0;
+    margin: 0;
 }
-#textout {
-	/* width: 280px; */
+
+#codein * {
+    text-align: left;
+    font-family: courier, monospace;
+    font-size: 13px;
+    resize: none;
+    width: 90%;
+    min-height: 5em;
+    left: 0px;
+    right: 0px;
+    padding: 0;
+    margin: 0;
+    border: 0px;
+    background: none;
+}
+
+#codeout {
+    /* width: 280px; */
     min-height: 80px;
+    padding: 0;
+    margin: 0;
+}
+
+#codeout * {
+    text-align: left;
+    font-family: courier, monospace;
+    font-size: 13px;
+    resize: none;
+    width: 90%;
+    min-height: 5em;
+    left: 0px;
+    right: 0px;
+    padding: 0;
+    margin: 0;
+    border: 0px;
+    background: none;
 }

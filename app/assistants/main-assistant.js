@@ -11,14 +11,16 @@ MainAssistant.prototype.setupHandlers = function () {
     // Model
     // --
     this.evalLisp = null;
+    this.codeinModel = { value : "" , disabled : false };
+    this.codeoutModel = { value : "" , disabled : true };
 
     // --
     // Handlers
     // --
     this.placeOutputHandler = function(output) {
-	var outputString = output.escapeHTML();
-	Mojo.Log.info("Placing output " + outputString);
-	this.controller.get( "textout" ).innerHTML = outputString;
+	Mojo.Log.info("Placing output " + output);
+	this.codeoutModel.value = output;
+	this.controller.modelChanged( this.codeoutModel );
     }.bind(this);
     
     enslave = function( lispEvaluator ){
@@ -28,7 +30,7 @@ MainAssistant.prototype.setupHandlers = function () {
 
     this.evaluateHandler = function() {
 	if( this.evalLisp) {
-	    var code = this.controller.get("textin").innerHTML.unescapeHTML().gsub("&nbsp;"," ");
+	    var code = codeinModel.value;
 	    Mojo.Log.info("Evaluating " + code);
 	    this.evalLisp( code , this.placeOutputHandler);
 	} else {
@@ -43,6 +45,7 @@ MainAssistant.prototype.setup = function() {
     this.setupHandlers();
     this.setupWidgets();
     this.setupMenu();
+    Mojo.Log.info("Ready to load the image");
     load();
 };
 
@@ -58,8 +61,24 @@ MainAssistant.prototype.cleanup = function(event) {
 
 MainAssistant.prototype.setupWidgets = function () {
     Mojo.Log.info("Setting up widgets");
-    this.controller.setupWidget( "textin" , {} , {} );
-    this.controller.setupWidget( "textout" , {} , {} );
+    this.controller.setupWidget( "codein" ,
+				 {
+				     multiline: true,
+				     autoFocus: true,
+				     autoResize: true,
+				     growWidth: true,
+				     autoReplace: false,
+				     textCase: Mojo.Widget.setModeLowerCase
+				 } , {} );
+    this.controller.setupWidget( "codeout" , 
+				 {
+				     multiline: true,
+				     autoFocus: false,
+				     autoResize: true,
+				     growWidth: true,
+				     autoReplace: false,
+				     textCase: Mojo.Widget.setModeLowerCase
+				 } , {} );
 };
 
 MainAssistant.prototype.setupMenu = function() {

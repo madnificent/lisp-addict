@@ -1,3 +1,4 @@
+Mojo.Log.info("Loading virtual machine");
 /// credits
 
 // The virtual machine was originally based on ideas and code from the
@@ -1685,7 +1686,10 @@ var execute = function(json) {
 };
 
 var load = function() {
+    Mojo.Log.info("loading fprims");
 	loadfprims();
+    Mojo.Log.info("loading mprims");
 	loadmprims();
+    Mojo.Log.info("executing bytecode");
 	execute(compiledcode);
 };
