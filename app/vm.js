@@ -1,10 +1,8 @@
-// enslave example: this function is provided by the stage
-// var enslave = function(lisp) {
-//     Mojo.Log.error("Enslave was called before the system published it");
-// };
+/// credits
 
-// Make sure Wds17-image.js before calling load();
-// load();
+// The virtual machine was originally based on ideas and code from the
+// books Paradigms of Artificial Intelligence Programming by Peter
+// Norvig and Programming Erlang by Joe Armstrong.
 
 /// global state
 
@@ -1690,8 +1688,4 @@ var load = function() {
 	loadfprims();
 	loadmprims();
 	execute(compiledcode);
-	//xhrget("boot.fasl", function(code, text) {
-	//	execute(eval(text));
-	//});
 };
-
