@@ -30,15 +30,20 @@ MainAssistant.prototype.setupHandlers = function () {
 
     this.evaluateHandler = function() {
 	if( this.evalLisp) {
-	    var code = codeinModel.value;
+	    var code = this.codeinModel.value;
 	    Mojo.Log.info("Evaluating " + code);
 	    this.evalLisp( code , this.placeOutputHandler);
 	} else {
 	    Mojo.Log.info("Not ready to evaluate yet");
 	}
-
     }.bind(this);
 
+    this.resetHandler = function() {
+	this.codeinModel.value = "";
+	this.controller.modelChanged( this.codeinModel );
+	this.codeoutModel.value = "";
+	this.controller.modelChanged( this.codeoutModel );
+    }.bind(this);
 };
 
 MainAssistant.prototype.setup = function() {
@@ -68,8 +73,9 @@ MainAssistant.prototype.setupWidgets = function () {
 				     autoResize: true,
 				     growWidth: true,
 				     autoReplace: false,
-				     textCase: Mojo.Widget.setModeLowerCase
-				 } , {} );
+				     textCase: Mojo.Widget.steModeLowerCase
+				 } ,
+				 this.codeinModel );
     this.controller.setupWidget( "codeout" , 
 				 {
 				     multiline: true,
@@ -77,8 +83,9 @@ MainAssistant.prototype.setupWidgets = function () {
 				     autoResize: true,
 				     growWidth: true,
 				     autoReplace: false,
-				     textCase: Mojo.Widget.setModeLowerCase
-				 } , {} );
+				     textCase: Mojo.Widget.steModeLowerCase
+				 } , 
+				 this.codeoutModel );
 };
 
 MainAssistant.prototype.setupMenu = function() {
@@ -102,8 +109,7 @@ MainAssistant.prototype.handleCommand = function(e) {
 	    break;
 	case "reset":
 	    Mojo.Log.info("Calling reset");
-	    this.controller.get("textout").innerHTML = "";
-	    this.controller.get("textin").innerHTML = "";
+	    this.resetHandler();
 	    break;
 	}
     }
