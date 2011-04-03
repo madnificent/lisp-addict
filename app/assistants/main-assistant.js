@@ -101,6 +101,9 @@ MainAssistant.prototype.setupMenu = function() {
 
 MainAssistant.prototype.handleCommand = function(e) {
     Mojo.Log.info("Main is trying to handle a command");
+    if (e.type == Mojo.Event.commandEnable && (e.command == Mojo.Menu.helpCmd)) {
+        e.stopPropagation();
+    }
     if( e.type == Mojo.Event.command )
     {
 	switch(e.command) {
@@ -111,6 +114,9 @@ MainAssistant.prototype.handleCommand = function(e) {
 	    Mojo.Log.info("Calling reset");
 	    this.resetHandler();
 	    break;
+	case Mojo.Menu.helpCmd:
+            Mojo.Controller.stageController.pushAppSupportInfoScene();
+            break;
 	}
     }
 }

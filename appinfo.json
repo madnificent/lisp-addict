@@ -1,10 +1,30 @@
 {
 	"id": "com.knowified.toys.lisp-addict",
-	"version": "0.0.1",
-	"vendor": "lispgames",
+	"version": "0.0.2",
+	"vendor": "Knowified Toys",
 	"type": "web",
 	"main": "index.html",
 	"title": "Lisp Addict",
 	"icon": "icon.png",
-        "theme": "light"
+        "smallicon" : "icon_32.png",
+        "theme": "light",
+        "support": {
+	    "resources": [ 
+		{
+		    "type": "scene",
+		    "label": "Introduction",
+		    "sceneName": "introduction"
+		},
+		{
+		    "type": "web",
+		    "label": "Source repository",
+		    "url": "http://github.com/madnificent/lisp-addict/"
+		},
+		{
+		    "type": "web",
+		    "label": "Emacs Connection",
+		    "url": "http://github.com/ebb/lisp-substance/"
+		}
+	    ]
+	}
 }

@@ -13,7 +13,8 @@
    height="1052.3622047"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.0 r9654">
+   inkscape:version="0.48.0 r9654"
+   sodipodi:docname="icon.svg">
   <defs
      id="defs4">
     <pattern
@@ -39,7 +40,11 @@
          offset="0"
          id="stop3769" />
       <stop
-         style="stop-color:#00d400;stop-opacity:0;"
+         id="stop4253"
+         offset="0.5"
+         style="stop-color:#d8ff00;stop-opacity:0;" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.79389316;"
          offset="1"
          id="stop3771" />
     </linearGradient>
@@ -55,6 +60,26 @@
          stdDeviation="6.0609163"
          id="feGaussianBlur5275" />
     </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter4151"
+       x="-0.10523902"
+       width="1.210478"
+       y="-0.12349"
+       height="1.24698">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="7.2377523"
+         id="feGaussianBlur4153" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter4523">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.4886133"
+         id="feGaussianBlur4525" />
+    </filter>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -63,9 +88,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="12.579123"
-     inkscape:cy="888.07372"
+     inkscape:zoom="1.4"
+     inkscape:cx="379.94159"
+     inkscape:cy="915.05556"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -129,5 +154,141 @@
        height="138.39093"
        x="116.16755"
        y="83.625893" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffff00;fill-opacity:1;stroke:#ff0000;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;filter:url(#filter4151);font-family:Sans"
+       x="388.54214"
+       y="122.06364"
+       id="text2985-4"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.84461889,0,0,0.76119305,72.80715,20.274698)"><tspan
+         sodipodi:role="line"
+         id="tspan2987-1"
+         x="388.54214"
+         y="122.06364"> load</tspan><tspan
+         sodipodi:role="line"
+         x="388.54214"
+         y="172.06363"
+         id="tspan2989-7"> 'lisp</tspan><tspan
+         sodipodi:role="line"
+         x="388.54214"
+         y="222.06363"
+         id="tspan2991-1"> 'addic)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffff00;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;filter:url(#filter4523);font-family:Sans"
+       x="389.48245"
+       y="121.52261"
+       id="text2985-4-1"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.78983159,0,0,0.78982768,98.676538,17.843619)"
+       inkscape:export-filename="/home/madnificent/code/webos/projects/lisp-addict/images/icon_32.png"
+       inkscape:export-xdpi="17.52"
+       inkscape:export-ydpi="17.52"><tspan
+         sodipodi:role="line"
+         id="tspan2987-1-2"
+         x="389.48245"
+         y="121.52261"> load</tspan><tspan
+         sodipodi:role="line"
+         x="389.48245"
+         y="171.52261"
+         id="tspan2989-7-3"> 'lisp</tspan><tspan
+         sodipodi:role="line"
+         x="389.48245"
+         y="221.52261"
+         id="tspan2991-1-1"> 'addict</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:31.33283615px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#343334;fill-opacity:1;stroke:none;font-family:Sans"
+       x="410.8555"
+       y="112.61221"
+       id="text2985-4-1-0"
+       sodipodi:linespacing="125%"
+       transform="scale(0.99176157,1.0083069)"
+       inkscape:export-filename="/home/madnificent/code/webos/projects/lisp-addict/images/icon_32.png"
+       inkscape:export-xdpi="17.52"
+       inkscape:export-ydpi="17.52"><tspan
+         sodipodi:role="line"
+         id="tspan2987-1-2-4"
+         x="410.8555"
+         y="112.61221"> load</tspan><tspan
+         sodipodi:role="line"
+         x="410.8555"
+         y="151.77826"
+         id="tspan2989-7-3-8"> 'lisp</tspan><tspan
+         sodipodi:role="line"
+         x="410.8555"
+         y="190.94431"
+         id="tspan2991-1-1-3"> 'addict</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40.54172897px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.4;fill:#000000;fill-opacity:1;stroke:none;font-family:TlwgTypewriter;-inkscape-font-specification:TlwgTypewriter Medium"
+       x="364.71494"
+       y="170.4541"
+       id="text4300"
+       sodipodi:linespacing="125%"
+       transform="scale(0.98663778,1.0135432)"
+       inkscape:export-filename="/home/madnificent/code/webos/projects/lisp-addict/images/icon_32.png"
+       inkscape:export-xdpi="17.52"
+       inkscape:export-ydpi="17.52"><tspan
+         sodipodi:role="line"
+         id="tspan4302"
+         x="364.71494"
+         y="170.4541"
+         style="font-size:145.95022583px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch">(</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:45.61798477px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:TlwgTypewriter;-inkscape-font-specification:TlwgTypewriter Medium"
+       x="251.97289"
+       y="141.39052"
+       id="text4300-4"
+       sodipodi:linespacing="125%"
+       transform="scale(0.87684716,1.1404496)"><tspan
+         sodipodi:role="line"
+         id="tspan4302-3"
+         x="251.97289"
+         y="141.39052"
+         style="font-size:164.2247467px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch">(</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40.54172897px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.4;fill:#000000;fill-opacity:1;stroke:none;font-family:TlwgTypewriter;-inkscape-font-specification:TlwgTypewriter Medium"
+       x="499.35971"
+       y="171.02579"
+       id="text4300-2"
+       sodipodi:linespacing="125%"
+       transform="scale(0.98663778,1.0135432)"
+       inkscape:export-filename="/home/madnificent/code/webos/projects/lisp-addict/images/icon_32.png"
+       inkscape:export-xdpi="17.52"
+       inkscape:export-ydpi="17.52"><tspan
+         sodipodi:role="line"
+         id="tspan4302-39"
+         x="499.35971"
+         y="171.02579"
+         style="font-size:145.95022583px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch">)</tspan></text>
+    <path
+       style="font-size:45.61798477px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.4;fill:#000000;fill-opacity:1;stroke:none;font-family:TlwgTypewriter;-inkscape-font-specification:TlwgTypewriter Medium"
+       d="m 414.41481,85.004591 c -0.35668,0 -0.7388,0.06642 -1.125,0.172774 0.67064,0.540255 1.09375,1.451182 1.09375,2.69035 0,2.514756 -2.88225,7.116747 -5.90625,14.513085 -5.04,12.27792 -8.78125,24.55229 -8.78125,40.82421 0,12.7217 2.286,24.10303 6.75,35.93715 4.032,10.5028 7.9375,16.41676 7.9375,19.22738 0,1.74739 -0.82349,2.96854 -2.03125,3.3074 0.73026,0.33964 1.42515,0.49364 2.0625,0.49364 1.584,0 2.75,-1.33515 2.75,-3.40613 0,-2.81062 -3.9055,-8.72457 -7.9375,-19.22736 -4.464,-11.83415 -6.75,-23.21546 -6.75,-35.93716 0,-16.27193 3.74125,-28.5463 8.78125,-40.82421 3.024,-7.396343 5.90625,-11.998335 5.90625,-14.51309 0,-2.070974 -1.166,-3.258039 -2.75,-3.258039 z"
+       id="text4300-28"
+       inkscape:connector-curvature="0" />
+    <path
+       style="font-size:45.61798477px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.4;fill:#000000;fill-opacity:1;stroke:none;font-family:TlwgTypewriter;-inkscape-font-specification:TlwgTypewriter Medium"
+       d="m 524.45082,84.89995 c -0.38561,0 -0.73848,0.08615 -1.0625,0.22214 3.12639,1.212708 7.10486,5.669185 11.71875,13.402383 8.35199,13.905127 12.53125,28.550797 12.53125,44.822737 0,16.27193 -4.17926,30.9176 -12.53125,44.82271 -4.75637,7.97203 -8.83292,12.45855 -12,13.50113 0.39076,0.24576 0.84473,0.3949 1.34375,0.3949 3.312,0 7.90301,-4.60117 13.375,-13.77262 8.35199,-13.90511 12.53125,-28.55079 12.53125,-44.82272 0,-16.27194 -4.17926,-30.91761 -12.53125,-44.822726 -5.47199,-9.17145 -10.063,-13.747934 -13.375,-13.747934 z"
+       id="text4300-2-8"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/madnificent/code/webos/projects/lisp-addict/images/icon_32.png"
+       inkscape:export-xdpi="17.52"
+       inkscape:export-ydpi="17.52" />
+    <rect
+       style="opacity:0.40000000000000002;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.28262162000000002;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect4543"
+       width="164.40309"
+       height="164.40309"
+       x="387.79843"
+       y="62.303493"
+       rx="0"
+       ry="25.815361"
+       inkscape:export-filename="/home/madnificent/code/webos/projects/lisp-addict/images/icon_32.png"
+       inkscape:export-xdpi="17.52"
+       inkscape:export-ydpi="17.52" />
   </g>
 </svg>

@@ -67,3 +67,49 @@
     border: 0px;
     background: none;
 }
+
+/* HELP */
+.code {
+    white-space: pre;
+    font-family: courier, monospace;
+    font-size: 13px;
+    padding: 1em;
+}
+
+h1 { 
+    font-size: 25px;
+    margin: 1ex;
+}
+
+h1 + p {
+    margin-top: 2ex;
+}
+
+p + h1 {
+    margin-top: 3ex;
+}
+
+.code + h1 {
+    margin-top: 3ex;
+}
+
+p {
+    margin: 1ex;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+p + .code {
+    margin: 1ex;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.inline-code-examples {
+    font-family: courier, monospace;
+    font-size: 13px;
+}
+
+ol {
+    font-size: 16px;
+}
