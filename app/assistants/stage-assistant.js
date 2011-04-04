@@ -12,5 +12,12 @@ StageAssistant.prototype.handleCommand = function(e) {
         if( e.command )
 	    e.stopPropagation();
 	break;
-    }
+    case Mojo.Event.command:
+	switch (e.command) {
+	case Mojo.Menu.prefsCmd :
+	    this.controller.pushScene("preferences");
+	    break;
+	};
+	break;
+    };
 }

@@ -1,16 +1,10 @@
 function MainAssistant() {
 }
 
-var enslave = function( lispEvaluator ) {
-    Mojo.Log.info("Calling enslave");
-    MainAssistant.prototype.evalLisp = lispEvaluator;
-}.bind(this);
-
 MainAssistant.prototype.setupHandlers = function () {
     // --
     // Model
     // --
-    this.evalLisp = null;
     this.codeinModel = { value : "" , disabled : false };
     this.codeoutModel = { value : "" , disabled : true };
 
@@ -23,16 +17,11 @@ MainAssistant.prototype.setupHandlers = function () {
 	this.controller.modelChanged( this.codeoutModel );
     }.bind(this);
     
-    enslave = function( lispEvaluator ){
-	Mojo.Log.info("Calling enslave function");
-	this.evalLisp = lispEvaluator;
-    }.bind(this);
-
     this.evaluateHandler = function() {
-	if( this.evalLisp) {
+	if( model.ready ) {
 	    var code = this.codeinModel.value;
 	    Mojo.Log.info("Evaluating " + code);
-	    this.evalLisp( code , this.placeOutputHandler);
+	    model.eval_lisp( code , this.placeOutputHandler);
 	} else {
 	    Mojo.Log.info("Not ready to evaluate yet");
 	}
@@ -101,7 +90,7 @@ MainAssistant.prototype.setupMenu = function() {
 
 MainAssistant.prototype.handleCommand = function(e) {
     Mojo.Log.info("Main is trying to handle a command");
-    if (e.type == Mojo.Event.commandEnable && (e.command == Mojo.Menu.helpCmd)) {
+    if (e.type == Mojo.Event.commandEnable && ( (e.command == Mojo.Menu.helpCmd) || (e.command == Mojo.Event.prefsCmd) )){
         e.stopPropagation();
     }
     if( e.type == Mojo.Event.command )

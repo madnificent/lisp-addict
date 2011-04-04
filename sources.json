@@ -1,5 +1,6 @@
 [
     {"source": "app/bytecode.js"},
+    {"source": "app/Model.js"},
     {"source": "app/assistants/stage-assistant.js"},
     {"source": "app/vm.js"},
     {
@@ -13,5 +14,9 @@
     {
         "scenes": "introduction-card",
         "source": "app/assistants/introduction-card-assistant.js"
+    },
+    {
+        "scenes": "preferences",
+        "source": "app/assistants/preferences-assistant.js"
     }
 ]

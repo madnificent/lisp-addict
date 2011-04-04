@@ -1,15 +1,4 @@
-/* .code-container { */
-/* 	background: #334; */
-/* 	text-align: center; */
-/* 	width: 100%; */
-/* 	height: 100%; */
-/* 	margin: 0; */
-/* 	padding: 0; */
-/* } */
-
 .code-area {
-	/* color: #cce; */
-	/* background: #111; */
 	text-align: left;
 	font-family: courier, monospace;
 	font-size: 13px;
@@ -25,7 +14,6 @@
 }
 
 #codein {
-    /* width: 280px; */
     min-height: 80px;
     padding: 0;
     margin: 0;
@@ -47,7 +35,6 @@
 }
 
 #codeout {
-    /* width: 280px; */
     min-height: 80px;
     padding: 0;
     margin: 0;

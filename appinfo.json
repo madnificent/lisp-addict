@@ -1,6 +1,6 @@
 {
 	"id": "com.knowified.toys.lisp-addict",
-	"version": "0.0.2",
+	"version": "1.0.0",
 	"vendor": "Knowified Toys",
 	"type": "web",
 	"main": "index.html",
