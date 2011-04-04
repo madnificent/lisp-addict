@@ -9,5 +9,9 @@
     {
         "scenes": "introduction",
         "source": "app/assistants/introduction-assistant.js"
+    },
+    {
+        "scenes": "introduction-card",
+        "source": "app/assistants/introduction-card-assistant.js"
     }
 ]

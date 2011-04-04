@@ -13,7 +13,7 @@
 		{
 		    "type": "scene",
 		    "label": "Introduction",
-		    "sceneName": "introduction"
+		    "sceneName": "introduction-card"
 		},
 		{
 		    "type": "web",
